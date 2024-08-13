@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* ==========================================================================
+- Universal Styles: Aplicados a todos los elementos.
+- Fondo de color #F3F5FC, fuente 'Inter', tamaño de fuente 32px, peso 400, 
+altura de línea 150%.
+- Ocultamos el contenido que excede el tamaño del contenedor usando overflow: hidden.
+========================================================================== */
+
+* { 
+    background-color: #F3F5FC;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+    overflow: hidden; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* ==========================================================================
+- .logo (Estilos para el logotipo)
+- Añadimos un margen superior de 10px y un margen izquierdo de 10px.
+- Establecemos el ancho al 7% del contenedor.
+========================================================================== */
+
+.logo {
+    padding-top: 10px ;
+    margin-left: 10px;
+    width: 7%;
+}
+
+/* ==========================================================================
+- main (Estilos para el contenedor principal)
+- Utilizamos display: flex para alinear los elementos dentro de 'main'.
+- Añadimos un margen izquierdo de 180px para separar el contenido del borde izquierdo.
+========================================================================== */
+
+main {
+    display: flex; 
+    margin-left: 180px;
+}
+
+/* ==========================================================================
+.text-area (Estilos para el área de texto)
+- Altura fija de 355px, padding de 2px y margen superior de 30px.
+- Color de texto #0A3871 y sin bordes ni outline.
+- Fuente: peso 400, tamaño 32px, altura de línea 48px.
+- Desactivamos la capacidad de redimensionar el área de texto.
+========================================================================== */
+
+
+.text-area {
+    height: 300px; /*Altura del textarea */
+    padding: 2px;
+    margin-top: 30px;
+    color: #0A3871;
+    border: none; /* Que no tenga border el area */
+    outline: none; /* Y que cuando demos click en ingrese texto aquí, no se muestre el area del cuadro */
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    resize: none; /* Hacemos que el textarea sea no se pueda mover ni editar las el tamaño */
+}
+
+/* ===============================================
+-Hacemos que las letras del placeholder sean #0A3871 (Azul) prácticamente
+================================================== */
+::placeholder {color: #0A3871;} 
+
+/* ==========================================================================
+-.mensaje (Estilos para el contenedor de mensaje)
+- Altura de 600px con fondo blanco y una imagen centrada de 90% del tamaño.
+- Imagen de fondo está alineada al centro y al 30% desde la parte superior.
+- Bordes redondeados con un radio de 24px, sin bordes ni outline.
+- Posicionamiento fijo para mantener la posición en la pantalla.
+========================================================================== */
+
+.mensaje {
+    height: 600px; /* Altura del textarea total */
+    background-color: #fff;
+    background-image: url(/img/Muñeco.png); /* Ponemos la imagen del muñeco de fondo */
+    background-repeat: no-repeat; /* No repetimos la imagen, que sea solo 1 */
+    background-position: center 30%; /* Posicionamos la imagen al centro con un 30% de la parte superior */
+    background-size: 90%; /* Acomodamos el tamaño de la imagen centrada a un 90% */
+    border-radius: 24px;
+    border: none; /* No ponemos bordes */
+    outline: none; /* Tampoco líneas */
+    margin-left: 98px;
+    margin-top: auto;
+    padding-left: 30px;
+    position: fixed; /* Elemento debe estar siempre en el mismo lugar de la página en todo momento. (No se mueve) */
+    color: #0A3871;
+    resize: none; /* Que no se pueda redimenzionar ni nada */
+}
+
+/* ==================================================================
+-Bajamos el texto h6 para que no quede tan arriba
+===================================================================== */
+
+.class_h6 {
+    margin-top: 100px;
+}
+
+/* ====================================================
+-Aplicamos estilo al h6.
+======================================================= */
+
+h6 {
+    font-size: 18px;
+    color: #495057;
+    margin-left: 10px; /* Corremos desde la izquierda */
+    margin-bottom: 0; /* Dejamos en 0 para que no hayan espacios hacia abajo */ 
+}
+
+/* ===============================================
+-Ajustamos los botones.
+================================================== */
+
+.botones {
+    display: flex; /* Hacemos un display para alinear los botones */
+    margin-top: 10px; /* Hacemos un margin para separar lo que está arriba */
+    gap: 24px; /* Gap para separar los dos botones */
+}
+
+/* ==========================================================================================
+-Ajustamos el boton de encriptacion y desencriptacion, añadiendo los estilos y ajustando.
+============================================================================================== */
+
+.btn-encriptar {
+    width: 328px; /* Hacemos un width para el ancho del boton */
+    height: 67px; /* Altura del boton */
+    background-color: #0A3871; 
+    color: #fff; 
+    border-radius: 24px;
+}
+
+.btn-desencriptar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.btn-copiar {
+    width: 310px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    position: absolute;
+    margin-top: 505px;
+    margin-left: 120px;
+    color: #0A3871;
+}
+
+
+footer {
+    font-size: 15px;
+    margin-top: 12px;
+    text-align: center;
+    color: #0A3871;
+    opacity: 50%;
+}
+
+/* 1440 x 720 resolucion desktop */
+/* 768 x 1132 resolucion tablet */
+/* 375 x 1715 resolucion celular*/
+
+
+@media (max-width: 768px ){
+
+
+    main {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .text-area {
+        height: 250px;
+        width: 688px;
+    }
+
+    .mensaje {
+    margin-top: 64px;
+    background-image: none;
+    height: 343px;
+    width: 666px;
+    margin-left: 0;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .btn-copiar {
+        margin-top: 300px;
+        width: 624px;
+        height: 67px;
+        margin-left: 40px;
+    }
+
+}
+
+@media (max-width: 376px ) {
+
+    .logo {
+        width: 20%;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+    main {
+        margin-left: 16px;
+    }
+
+    .text-area {
+        height: 500px;
+    }
+    
+    .mensaje {
+        width: 300px;
+        height: 595px;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-copiar {
+        width: 279px;
+        height: 67px;
+        margin: 555px 32px 32px 32px;
+    }
+}
