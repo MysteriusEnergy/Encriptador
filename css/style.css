@@ -103,7 +103,8 @@ main {
 ===================================================================== */
 
 .class_h6 {
-    margin-top: 100px;
+    margin-top: 150px;
+
 }
 
 /* ====================================================
@@ -113,8 +114,9 @@ main {
 h6 {
     font-size: 18px;
     color: #495057;
-    margin-left: 10px; /* Corremos desde la izquierda */
+    margin-left: 5px; /* Corremos desde la izquierda */
     margin-bottom: 0; /* Dejamos en 0 para que no hayan espacios hacia abajo */ 
+    
 }
 
 /* ===============================================
@@ -154,7 +156,7 @@ h6 {
     border: 1px solid #0A3871;
     position: absolute;
     margin-top: 505px;
-    margin-left: 120px;
+    margin-left: 150px;
     color: #0A3871;
 }
 
