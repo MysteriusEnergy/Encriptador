@@ -81,6 +81,7 @@ main {
 
 .mensaje {
     height: 600px; /* Altura del textarea total */
+    width: 400px;
     background-color: #fff;
     background-image: url("/img/foto-inicial.png"); /* Ponemos la imagen del muñeco de fondo */
     background-repeat: no-repeat; /* No repetimos la imagen, que sea solo 1 */
