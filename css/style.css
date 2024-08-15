@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+    --color-de-fondo: #f3f5fc;
+    --color-secundario: #fff;
+    --estilos-letras: "Inter";
+    --color-terciario: #0a3871;
+    --color-h6: #495057;
+}
+
 /* ==========================================================================
 - Universal Styles: Aplicados a todos los elementos.
 - Fondo de color #F3F5FC, fuente 'Inter', tamaño de fuente 32px, peso 400, 
@@ -14,8 +22,8 @@ altura de línea 150%.
 }
 
 body {
-    font-family: "Inter";
-    background-color: #F3F5FC;
+    font-family: var(--estilos-letras);
+    background-color: var(--color-de-fondo);
     font-size: 32px;
     font-weight: 400;
     height: 100vh;
@@ -57,7 +65,7 @@ main {
     height: 300px; /*Altura del textarea */
     padding: 2px;
     margin-top: 30px;
-    color: #0A3871;
+    color: var(--color-terciario);
     border: none; /* Que no tenga border el area */
     outline: none; /* Y que cuando demos click en ingrese texto aquí, no se muestre el area del cuadro */
     font-weight: 400;
@@ -69,7 +77,9 @@ main {
 /* ===============================================
 -Hacemos que las letras del placeholder sean #0A3871 (Azul) prácticamente
 ================================================== */
-::placeholder {color: #0A3871;} 
+::placeholder {
+    color: var(--color-terciario);
+} 
 
 /* ==========================================================================
 -.mensaje (Estilos para el contenedor de mensaje)
@@ -82,7 +92,7 @@ main {
 .mensaje {
     height: 600px; /* Altura del textarea total */
     width: 400px;
-    background-color: #fff;
+    background-color: var(--color-secundario);
     background-image: url("/img/foto-inicial.png"); /* Ponemos la imagen del muñeco de fondo */
     background-repeat: no-repeat; /* No repetimos la imagen, que sea solo 1 */
     background-position: center 30%; /* Posicionamos la imagen al centro con un 30% de la parte superior */
@@ -94,7 +104,7 @@ main {
     margin-top: auto;
     padding-left: 30px;
     position: fixed; /* Elemento debe estar siempre en el mismo lugar de la página en todo momento. (No se mueve) */
-    color: #0A3871;
+    color: var(--color-terciario);
     resize: none; /* Que no se pueda redimenzionar ni nada */
 }
 
@@ -113,7 +123,7 @@ main {
 
 h6 {
     font-size: 18px;
-    color: #495057;
+    color: var(--color-h6);
     margin-left: 5px; /* Corremos desde la izquierda */
     margin-bottom: 0; /* Dejamos en 0 para que no hayan espacios hacia abajo */ 
     
@@ -136,8 +146,8 @@ h6 {
 .btn-encriptar {
     width: 328px; /* Hacemos un width para el ancho del boton */
     height: 67px; /* Altura del boton */
-    background-color: #0A3871; 
-    color: #fff; 
+    background-color: var(--color-terciario); 
+    color: var(--color-secundario); 
     border-radius: 24px;
 }
 
@@ -145,19 +155,19 @@ h6 {
     width: 328px;
     height: 67px;
     border-radius: 24px;
-    border: 1px solid #0A3871;
-    color: #0A3871;
+    border: 1px solid var(--color-terciario);
+    color: var(--color-terciario);
 }
 
 .btn-copiar {
     width: 310px;
     height: 67px;
     border-radius: 24px;
-    border: 1px solid #0A3871;
+    border: 1px solid var(--color-terciario);
     position: absolute;
     margin-top: 505px;
     margin-left: 150px;
-    color: #0A3871;
+    color: var(--color-terciario);
 }
 
 
@@ -165,7 +175,7 @@ p {
     font-size: 15px;
     margin-top: 12px;
     text-align: center;
-    color: #0A3871;
+    color: var(--color-terciario);
     opacity: 50%;
 }
 
