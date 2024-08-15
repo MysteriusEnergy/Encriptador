@@ -1,4 +1,8 @@
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+[![Package Control total downloads](https://img.shields.io/packagecontrol/dt/SwitchDictionary.svg)](https://packagecontrol.io/packages/SwitchDictionary)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![GitHub followers](https://img.shields.io/github/followers/Naereen.svg?style=social&label=Follow&maxAge=259200)](https://github.com/Naereen?tab=followers)
+
 <h1 align="center"> Encriptador </h1>
 
 Este proyecto está diseñado para encriptar y desencriptar cualquier tipo de mensaje que desees. Es una herramienta versátil y fácil de usar que permite proteger la privacidad de tus comunicaciones.
