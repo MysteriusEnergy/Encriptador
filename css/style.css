@@ -99,7 +99,7 @@ main {
     height: 600px; /* Altura del textarea total */
     width: 400px;
     background-color: var(--color-secundario);
-    background-image: url("/img/foto-inicial.png"); /* Ponemos la imagen del muñeco de fondo */
+    background-image: url("../img/foto-inicial.png"); /* Ponemos la imagen del muñeco de fondo */
     background-repeat: no-repeat; /* No repetimos la imagen, que sea solo 1 */
     background-position: center 30%; /* Posicionamos la imagen al centro con un 30% de la parte superior */
     background-size: 90%; /* Acomodamos el tamaño de la imagen centrada a un 90% */
