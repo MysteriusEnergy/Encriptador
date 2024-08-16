@@ -63,7 +63,7 @@ main {
 
 .text-area {
     height: 300px; /*Altura del textarea */
-    padding: 2px;
+    padding: 10px 0 0 15px;
     margin-top: 30px;
     color: var(--color-terciario);
     border: none; /* Que no tenga border el area */
@@ -72,6 +72,8 @@ main {
     font-size: 32px;
     line-height: 48px;
     resize: none; /* Hacemos que el textarea sea no se pueda mover ni editar las el tamaño */
+    border-radius: 5px;
+    
 }
 
 /* ===============================================
@@ -79,7 +81,11 @@ main {
 ================================================== */
 ::placeholder {
     color: var(--color-terciario);
+    opacity: 50%;
+    padding: 3px;
 } 
+
+
 
 /* ==========================================================================
 -.mensaje (Estilos para el contenedor de mensaje)
@@ -103,9 +109,11 @@ main {
     margin-left: 98px;
     margin-top: auto;
     padding-left: 30px;
+    padding-top: 20px;
     position: fixed; /* Elemento debe estar siempre en el mismo lugar de la página en todo momento. (No se mueve) */
     color: var(--color-terciario);
     resize: none; /* Que no se pueda redimenzionar ni nada */
+    font-size: 24px;
 }
 
 /* ==================================================================
@@ -143,20 +151,23 @@ h6 {
 -Ajustamos el boton de encriptacion y desencriptacion, añadiendo los estilos y ajustando.
 ============================================================================================== */
 
-.btn-encriptar {
+.btn-encriptar, .btn-desencriptar {
     width: 328px; /* Hacemos un width para el ancho del boton */
     height: 67px; /* Altura del boton */
     background-color: var(--color-terciario); 
     color: var(--color-secundario); 
     border-radius: 24px;
+    font-family: var(--estilos-letras);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
-.btn-desencriptar {
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    border: 1px solid var(--color-terciario);
+.btn-desencriptar  {
     color: var(--color-terciario);
+    background-color: var(--color-de-fondo);
+    border: 1px solid var(--color-terciario);
+    
 }
 
 .btn-copiar {
@@ -164,16 +175,20 @@ h6 {
     height: 67px;
     border-radius: 24px;
     border: 1px solid var(--color-terciario);
+    background-color: var(--color-secundario);
     position: absolute;
     margin-top: 505px;
     margin-left: 150px;
     color: var(--color-terciario);
+    font-family: var(--estilos-letras);
+    font-size: 16px;
+    cursor: pointer;
 }
 
 
 p {
     font-size: 15px;
-    margin-top: 12px;
+    margin-top: 30px;
     text-align: center;
     color: var(--color-terciario);
     opacity: 50%;
