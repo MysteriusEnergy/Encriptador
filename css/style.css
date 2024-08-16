@@ -54,7 +54,7 @@ main {
 
 /* ==========================================================================
 .text-area (Estilos para el área de texto)
-- Altura fija de 355px, padding de 2px y margen superior de 30px.
+- Altura fija de 300px, padding de 2px y margen superior de 30px.
 - Color de texto #0A3871 y sin bordes ni outline.
 - Fuente: peso 400, tamaño 32px, altura de línea 48px.
 - Desactivamos la capacidad de redimensionar el área de texto.
@@ -63,7 +63,7 @@ main {
 
 .text-area {
     height: 300px; /*Altura del textarea */
-    padding: 10px 0 0 15px;
+    padding: 10px 0 0 15px; /* Acomodamos para poder escribir no este tan pegado */
     margin-top: 30px;
     color: var(--color-terciario);
     border: none; /* Que no tenga border el area */
