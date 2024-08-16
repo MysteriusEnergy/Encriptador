@@ -197,6 +197,7 @@ p {
 /* 1440 x 720 resolucion desktop */
 /* 768 x 1132 resolucion tablet */
 /* 375 x 1715 resolucion celular*/
+/* 430 x 932  resolucion iphone 14 pro max*/
 
 
 @media (max-width: 768px ){
@@ -204,12 +205,12 @@ p {
 
     main {
         flex-direction: column;
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     .text-area {
         height: 250px;
-        width: 688px;
+        width: 666px;
     }
 
     .mensaje {
@@ -220,10 +221,10 @@ p {
     margin-left: 0;
     }
 
-    p {
-        display: none;
+    .botones {
+        gap: 15px;
     }
-
+    
     .btn-copiar {
         margin-top: 300px;
         width: 624px;
@@ -231,6 +232,52 @@ p {
         margin-left: 40px;
     }
 
+    p {
+        display: none;
+    }
+
+    
+}
+
+@media (max-width: 431px) {
+    
+    .logo {
+        width: 15%;
+        
+    }
+
+    main {
+        margin-left: 15px;
+
+    }
+
+    .text-area {
+        width: 330px;
+        height: 350px;
+        
+    }
+
+    .mensaje {
+        width: 330px;
+        height: 590px;
+
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    h6 {
+        margin-top: -100px;
+    }
+
+    .btn-copiar {
+    width: 250px;
+    height: 67px;
+
+    }
 }
 
 @media (max-width: 376px ) {
@@ -246,17 +293,19 @@ p {
     }
 
     .text-area {
-        height: 500px;
+        height: 600px;
+        width: 343px;
     }
     
     .mensaje {
-        width: 300px;
+        width: 343px;
         height: 595px;
     }
 
     .botones {
         display: flex;
         flex-direction: column;
+        gap: 20px;
     }
 
     .btn-copiar {
