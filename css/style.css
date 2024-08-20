@@ -206,7 +206,7 @@ p {
     main {
         max-height: 100vh;
         flex-direction: column;
-        margin-left: 20px;
+        margin-left: 25px;
     }
 
     .text-area {
@@ -253,7 +253,7 @@ p {
     }
 
     main {
-        margin-left: 20px;
+        margin-left: 15px;
 
     }
 
