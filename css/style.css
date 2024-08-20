@@ -73,7 +73,7 @@ main {
     line-height: 48px;
     resize: none; /* Hacemos que el textarea sea no se pueda mover ni editar las el tamaño */
     border-radius: 5px;
-    
+    box-shadow: 0 0 20px var(--color-h6);
 }
 
 /* ===============================================
@@ -114,6 +114,7 @@ main {
     color: var(--color-terciario);
     resize: none; /* Que no se pueda redimenzionar ni nada */
     font-size: 24px;
+    box-shadow: 0 0 20px var(--color-h6);
 }
 
 /* ==================================================================
@@ -161,13 +162,30 @@ h6 {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    box-shadow: 0 0 20px var(--color-h6);
+
 }
+
+.btn-encriptar:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+    border: 1px solid var(--color-terciario);
+    border: none;
+    
+}
+
 
 .btn-desencriptar  {
     color: var(--color-terciario);
     background-color: var(--color-de-fondo);
     border: 1px solid var(--color-terciario);
+    border: none;
     
+}
+
+.btn-desencriptar:hover {
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
 }
 
 .btn-copiar {
@@ -183,6 +201,11 @@ h6 {
     font-family: var(--estilos-letras);
     font-size: 16px;
     cursor: pointer;
+}
+
+.btn-copiar:hover {
+    background: linear-gradient(to right, var(--color-terciario) , var(--color-de-fondo) , var(--color-terciario));
+
 }
 
 
